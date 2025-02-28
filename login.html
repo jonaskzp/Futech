@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futech-Login</title>
+
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu de Navegação (Header) -->
+    <header>
+        <div class="menusup"> 
+            <img src="/img/logotipo.png" alt="">
+            <ul>
+                <li><a href="home.html">Início</a> </li>
+                <li><a href="help.html#sobre2">Sobre</a> </li>
+                <li><a href="help.html#contato2">Contato</a> </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="adctxt">
+            <h1>SISTEMA DE CADASTRO DE JOGADORES</h1>
+            <p>Site oficial licenciado pela CBF.</p>
+
+        </div>
+        <div class="loginbox">
+            <div class="infoimg">
+                <img src="/img/logotipo.png" alt="">
+            </div>
+
+            <form id="loginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" placeholder="Digite seu usuário" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+
+                <button type="submit">Entrar</button>
+                <p id="errorMessage" style="color:red;"></p>
+            </form>
+
+        </div>
+        
+    </main>
+    
+   
+    <footer>
+            <h1>Site licenciado pelo BID/CBF.</h1>
+            <a href="https://bid.cbf.com.br/" target="_blank">
+                <img src="/img/Bid.png" alt="Logo">
+            </a>
+        </div>
+    </footer>
+    
+    
+    <script src="login.js"></script>
+</body>
+</html>

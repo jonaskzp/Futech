@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: "Poppins", serif;
+    font-size: 62.5%;
+}
+/* Estilo básico para o menu de navegação (header) */
+header {
+    background-color: #01407acb;
+    padding: 10px 0;
+}
+.menusup{
+    display: flex;
+    align-items: center;
+}
+.menusup ul li {
+    display: inline;
+    padding: 4rem;    
+}
+.menusup img{
+    width: 3rem;
+    margin-left: 2rem;
+}
+.menusup ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.logout{
+    margin-left: 70rem;
+}
+.logout a{
+    color: aliceblue;
+    text-decoration: none;
+}
+/*main*/
+.logotipo {
+    max-width: 125rem;
+    background-image: url(/img/futeh.webp);
+    background-position: center;
+    background-size: 50%;
+    width: 100vw;
+    height: 50rem;
+
+    /* Gradiente que faz toda a imagem sumir aos poucos nas bordas */
+    mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 90%);
+    -webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 90%);
+}
+.info{
+    padding: 5rem;
+    width: 80rem;
+}
+.info h1{
+    font-size: 2.6rem;
+    color: #053a9b;
+}
+.info p {
+    font-size: 1.4rem;
+}
+
+
+/*FOOTER*/
+footer {
+    border-top: solid .1rem #053a9b;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr; /* Três colunas: 3 tópicos | 2 tópicos | imagem */
+    grid-template-areas: 
+        "coluna1 coluna2 imagem";
+    padding: 1.5rem;
+    text-align: left;
+}
+.footer-coluna1 {
+    grid-area: coluna1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footer-coluna2 {
+    grid-area: coluna2;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footer-imagem {
+    grid-area: imagem;
+    display: flex;
+}
+.footer-imagem img {
+    width: 15rem; /* Ajuste conforme necessário */
+}
+footer a {
+    text-decoration: none;
+    color:#053a9b ;
+    font-weight: 400;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: gray;
+}
+
