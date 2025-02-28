@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (username === validUser.username && password === validUser.password) {
                 localStorage.setItem("auth", "true"); // Armazena o login bem-sucedido
-                window.location.href = "home.html"; // Redireciona para a página principal
+                window.location.href = "/HOME/home.html"; // Redireciona para a página principal
             } else {
                 errorMessage.textContent = "Usuário ou senha incorretos!";
             }
